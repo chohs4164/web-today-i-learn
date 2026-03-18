@@ -3,10 +3,12 @@
   position: sticky;
   top: 0;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  padding: 0 32px;
-  height: 56px;
+  gap: 12px 24px;
+  padding: 12px 32px;
+  min-height: 56px;
   background-color: var(--nav-bg-color);
   border-bottom: 1px solid var(--divider-color);
   z-index: 10;
@@ -20,6 +22,7 @@
 
 .nav-links {
   display: flex;
+  flex-wrap: wrap;
   gap: 24px;
   list-style: none;
 }
@@ -82,6 +85,15 @@ main {
   padding: 0 24px;
 }
 
+#about,
+#intro,
+#info,
+#gallery,
+#works,
+#til {
+  scroll-margin-top: 88px;
+}
+
 .content-section {
   padding: 48px 0;
   border-bottom: 1px solid var(--divider-color);
@@ -117,19 +129,13 @@ main {
   border-radius: 4px;
 }
 
-.gallery-grid video {
-  width: 100%;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
-  border-radius: 4px;
-  background-color: #000;
-}
-
 /* 인생 작품 카드 */
 .works-list {
   display: flex;
   flex-direction: column;
   gap: 24px;
+  list-style: none;
+  padding: 0;
 }
 
 .work-card {
@@ -387,6 +393,19 @@ footer {
 }
 
 @media (max-width: 720px) {
+  .top-nav {
+    padding: 12px 20px;
+  }
+
+  .nav-links {
+    gap: 12px;
+  }
+
+  .profile-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
   .work-card {
     flex-direction: column;
   }
@@ -403,6 +422,10 @@ footer {
 
   .work-card-video .work-info {
     max-width: none;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 

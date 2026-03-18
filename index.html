@@ -2,61 +2,61 @@
 <html lang="ko">
 
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="utf-8" />
   <meta name="viewport" content="initial-scale=1, width=device-width" />
+  <meta property="og:title" content="조디악의 Today I Learn" />
+  <meta property="og:description" content="조디악의 프로필, 갤러리, 인생 작품, TIL을 한 페이지에 담은 소개 웹페이지" />
+  <meta property="og:image" content="./images/profile.jpeg" />
 
-  <!-- TODO: Open Graph 메타 태그를 설정하세요 -->
-  <!-- <meta property="og:title" content="페이지 제목" /> -->
-  <!-- <meta property="og:description" content="페이지 설명" /> -->
-  <!-- <meta property="og:image" content="./images/thumbnail.jpg" /> -->
-
-  <title>Today I Learn</title>
+  <title>조디악의 Today I Learn</title>
   <link rel="stylesheet" href="./css/main.css" />
   <script src="./js/index.js" defer></script>
 </head>
 
 <body>
-  <!-- 상단 내비게이션 -->
-  <nav class="top-nav">
-    <span class="nav-logo">My Page ✨</span>
-    <ul class="nav-links">
-      <li><a href="#about">🙋 자기소개</a></li>
-      <li><a href="#gallery">📸 갤러리</a></li>
-      <li><a href="#works">🎬 인생 작품</a></li>
-      <li><a href="#til">📝 TIL</a></li>
-    </ul>
-  </nav>
+  <header>
+    <nav class="top-nav" aria-label="주요 섹션 탐색">
+      <span class="nav-logo">My Page ✨</span>
+      <ul class="nav-links">
+        <li><a href="#about">🙋 프로필</a></li>
+        <li><a href="#intro">🗒 소개</a></li>
+        <li><a href="#info">📌 기본 정보</a></li>
+        <li><a href="#gallery">📸 갤러리</a></li>
+        <li><a href="#works">🎬 인생 작품</a></li>
+        <li><a href="#til">📝 TIL</a></li>
+      </ul>
+    </nav>
 
-  <!-- 프로필 히어로 -->
-  <section class="hero" id="about">
-    <div class="profile-card">
-      <div class="profile-image">
-        <img src="./profile.jpeg" alt="조디악 프로필 사진" />
+    <section class="hero" id="about">
+      <div class="profile-card">
+        <div class="profile-image">
+          <img src="./images/profile.jpeg" alt="조디악 프로필 사진" />
+        </div>
+        <div class="profile-info">
+          <h1>조디악 🌟</h1>
+          <p class="tagline">흥미로운 기록쟁이이자 꾸준한 기록 메이커</p>
+        </div>
       </div>
-      <div class="profile-info">
-        <h1>조디악 🌟</h1>
-        <p class="tagline">흥미로운 기록쟁이😘📚</p>
-      </div>
-    </div>
-  </section>
+    </section>
+  </header>
 
   <main>
-    <!-- 자기소개 -->
-    <section class="content-section">
+    <section class="content-section" id="intro">
       <h2>🙋 자기소개</h2>
-      <p>안녕하세요, Zodiac입니다~!!
-        🤖 Android 개발에 관심이 많고, 사용자 입장에서 더 편한 화면과 흐름을 만드는 것을 좋아합니다.<br>
-        평소에는 구조를 정리하거나 작은 불편함을 개선하는 일에 재미를 느끼는 편입니다.<br>
-        개발 외에는 사진 찍기 📸, 카페 가기 ☕️, 기록 📚 남기는 것도 좋아합니다.<br>
-        우테코에서는 좋은 동료들과 함께 많이 배우고, 함께 성장하는 개발자가 되고 싶습니다. 오늘도 화이팅!!<br><br>
-        제 <a href="https://github.com/chohs4164" target="_blank" rel="noreferrer">GitHub 🐱</a>는 맞팔 언제든 환영입니다~<br>
-        <a href="https://velog.io/@chohs4164/posts" target="_blank" rel="noreferrer">Velog ✍️</a>에는 편히 들어오셔서 읽고 가세요~</p>
+      <p>
+        안녕하세요, Zodiac입니다. Android 개발에 관심이 많고 사용자의 입장에서 더 자연스럽고 편한 흐름을 만드는 일을
+        좋아합니다. 작은 불편을 발견하면 구조를 다시 정리해 더 나은 경험으로 바꾸는 과정에서 가장 큰 재미를 느낍니다.
+      </p>
+      <p>
+        개발 외에는 사진 찍기, 카페 가기, 기록 남기기를 좋아합니다. 우테코에서는 좋은 동료들과 함께 많이 배우고, 오래
+        함께 일하고 싶은 개발자로 성장하는 것이 목표입니다. 작업 기록은
+        <a href="https://github.com/chohs4164" target="_blank" rel="noreferrer">GitHub</a>와
+        <a href="https://velog.io/@chohs4164/posts" target="_blank" rel="noreferrer">Velog</a>에 꾸준히 남기고 있습니다.
+      </p>
     </section>
 
-    <!-- 기본 정보 -->
     <section class="content-section" id="info">
       <h2>📌 기본 정보</h2>
-      <!-- TODO: 자신의 기본 정보를 표(<table>)로 정리하세요 -->
       <table class="info-table">
         <tr>
           <th>🙋 이름</th>
@@ -77,36 +77,28 @@
       </table>
     </section>
 
-    <!-- 나만의 갤러리 -->
     <section class="content-section" id="gallery">
       <h2>📸 나만의 갤러리</h2>
-      <p class="section-desc">기억하고 싶은 순간들을 담아둔 작은 사진 아카이브 ✨</p>
+      <p class="section-desc">기억하고 싶은 순간들을 모아둔 나의 사진 기록장</p>
       <div class="gallery-grid">
-        <img src="./KakaoTalk_Photo_2026-03-18-17-27-34 001.jpeg" alt="갤러리 사진 1" />
-        <img src="./KakaoTalk_Photo_2026-03-18-17-27-35 003.jpeg" alt="갤러리 사진 2" />
-        <img src="./KakaoTalk_Photo_2026-03-18-17-27-35 005.jpeg" alt="갤러리 사진 3" />
-        <img src="./KakaoTalk_Photo_2026-03-18-17-27-35 007.jpeg" alt="갤러리 사진 4" />
-        <video class="gallery-video" controls muted playsinline>
-          <source src="./KakaoTalk_Video_2026-03-18-17-39-10.mp4" type="video/mp4" />
-          브라우저가 동영상을 지원하지 않습니다.
-        </video>
-        <img src="./KakaoTalk_Photo_2026-03-18-17-29-17 011.jpeg" alt="갤러리 사진 5" />
-        <img src="./KakaoTalk_Photo_2026-03-18-17-29-17 012.jpeg" alt="갤러리 사진 6" />
-        <img src="./KakaoTalk_Photo_2026-03-18-17-29-18 015.jpeg" alt="갤러리 사진 7" />
-        <img src="./KakaoTalk_Photo_2026-03-18-17-29-18 018.jpeg" alt="갤러리 사진 8" />
+        <img src="./images/KakaoTalk_Photo_2026-03-18-17-27-34 001.jpeg" alt="카페에서 찍은 갤러리 사진 1" />
+        <img src="./images/KakaoTalk_Photo_2026-03-18-17-27-35 003.jpeg" alt="일상 순간을 담은 갤러리 사진 2" />
+        <img src="./images/KakaoTalk_Photo_2026-03-18-17-27-35 005.jpeg" alt="좋아하는 장면을 담은 갤러리 사진 3" />
+        <img src="./images/KakaoTalk_Photo_2026-03-18-17-27-35 007.jpeg" alt="분위기 있는 풍경의 갤러리 사진 4" />
+        <img src="./images/KakaoTalk_Photo_2026-03-18-17-29-17 013.jpeg" alt="기억에 남는 장소의 갤러리 사진 5" />
+        <img src="./images/KakaoTalk_Photo_2026-03-18-17-29-17 011.jpeg" alt="소중한 추억을 담은 갤러리 사진 6" />
+        <img src="./images/KakaoTalk_Photo_2026-03-18-17-29-17 012.jpeg" alt="좋아하는 색감의 갤러리 사진 7" />
+        <img src="./images/KakaoTalk_Photo_2026-03-18-17-29-18 015.jpeg" alt="다시 보고 싶은 순간의 갤러리 사진 8" />
+        <img src="./images/KakaoTalk_Photo_2026-03-18-17-29-18 018.jpeg" alt="오래 남기고 싶은 갤러리 사진 9" />
       </div>
     </section>
 
-    <!-- 나를 울린 인생 작품 -->
     <section class="content-section" id="works">
       <h2>🎬 나를 울린 인생 작품</h2>
-      <div class="works-list">
-        <!-- TODO: 최소 2가지 작품을 소개하세요 -->
-        <!-- TODO: 작품 중 하나는 <video> 또는 <iframe>으로 영상을 삽입하세요 -->
-        <article class="work-card">
+      <ul class="works-list">
+        <li class="work-card">
           <div class="work-thumbnail">
-            <!-- 작품 이미지 -->
-            <img src="topgun_maverick.jpeg" alt="탑건: 매버릭 포스터" />
+            <img src="./images/topgun_maverick.jpeg" alt="탑건: 매버릭 포스터" />
           </div>
           <div class="work-info">
             <h3>✈️ 탑건: 매버릭</h3>
@@ -117,8 +109,8 @@
               임무가 주어지자, 매버릭은 자신이 가르친 동료들과 함께 마지막이 될지도 모를 하늘 위 비행에 나서는데...
             </p>
           </div>
-        </article>
-        <article class="work-card work-card-video">
+        </li>
+        <li class="work-card work-card-video">
           <div class="work-thumbnail video-thumbnail">
             <iframe
               src="https://www.youtube.com/embed/DTd5u2YAB9E"
@@ -135,16 +127,14 @@
               싶어지는 작품이라 인생 드라마로 남아 있다.
             </p>
           </div>
-        </article>
-      </div>
+        </li>
+      </ul>
     </section>
 
-    <!-- TIL (Today I Learned) -->
     <section class="content-section" id="til">
       <h2>📝 TIL</h2>
       <p class="section-desc">오늘 새롭게 배운 것들을 기록합니다. 기록은 꾸준함의 힘이라고 믿습니다 💡</p>
 
-      <!-- TIL 작성 폼 -->
       <form class="til-form" id="til-form">
         <div class="form-group">
           <label for="til-date">날짜</label>
@@ -164,9 +154,7 @@
         </div>
       </form>
 
-      <!-- TIL 목록: 폼으로 등록하면 여기에 항목이 추가됩니다 -->
       <div class="til-list" id="til-list">
-        <!-- 아래는 예시 항목입니다. 자유롭게 수정하거나 삭제하세요 -->
         <article class="til-item">
           <time>2026-03-15</time>
           <h3>HTML 시멘틱 태그</h3>
